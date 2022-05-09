@@ -49,8 +49,11 @@
     <Compile Include="Clases3\PersonaMetodos.cs" />
     <Compile Include="Clases5\PilaGenerica.cs" />
     <Compile Include="Clases6\ColaGenerica.cs" />
+    <Compile Include="Clases7\ListaDevPlace.cs" />
+    <Compile Include="Clases7\ListaItems.cs" />
     <Compile Include="Clases\Rectangulo.cs" />
     <Compile Include="Clases\RectanguloMetodos.cs" />
+    <Compile Include="Extension\ClaseExtension.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
