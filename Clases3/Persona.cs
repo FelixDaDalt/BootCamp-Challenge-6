@@ -11,10 +11,14 @@ namespace BootCamp_Challenge_6.Clases3
         private string nombre;
         private DateTime fecNacimiento;
 
+        public DateTime FecNacimiento { get => fecNacimiento; }
+
         public Persona(string nombre, DateTime fecNacimiento)
         {
             this.nombre = nombre;
             this.fecNacimiento = fecNacimiento;
         }
+
+
     }
 }

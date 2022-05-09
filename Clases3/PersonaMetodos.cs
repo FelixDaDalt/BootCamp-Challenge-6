@@ -11,7 +11,7 @@ namespace BootCamp_Challenge_6.Clases3
 
         public void edad()
         {
-          int edad= DateTime.Today.AddTicks(-this.fecNacimiento.Ticks).Year - 1;
+          int edad= DateTime.Today.AddTicks(-this.FecNacimiento.Ticks).Year - 1;
             Console.WriteLine($"Edad: {edad} años");
         }
 

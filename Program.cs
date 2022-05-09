@@ -24,6 +24,7 @@ namespace BootCamp_Challenge_6
             //Ejercicio6();
             //Ejercicio7();
             //Ejercicio8();
+            //Ejercicio9();
             Console.ReadKey();
 
         }
@@ -187,6 +188,15 @@ namespace BootCamp_Challenge_6
             Console.WriteLine(texto.primeraMidad());
 
             Console.WriteLine(texto.segundaMidad());
+        }
+
+        static void Ejercicio9()
+        {
+            Persona per = new Persona("felix", new DateTime(1985, 10, 12));
+            if (per.mayorEdad())
+                Console.WriteLine("Es Mayor");
+            else
+                Console.WriteLine("Es Menor");
         }
     }
 }

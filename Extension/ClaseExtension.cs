@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BootCamp_Challenge_6.Clases3;
 
 namespace BootCamp_Challenge_6.Extension
 {
@@ -15,6 +16,13 @@ namespace BootCamp_Challenge_6.Extension
         public static string segundaMidad(this string tex)
         {
             return tex.Substring(tex.Length / 2);
+        }
+        public static bool mayorEdad(this Persona p)
+        {
+            if (DateTime.Today.AddTicks(-p.FecNacimiento.Ticks).Year - 1 > 18)
+                return true;
+            else
+                return false;
         }
     }
 }
