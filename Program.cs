@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BootCamp_Challenge_6.Clases;
 using BootCamp_Challenge_6.Clases2;
+using BootCamp_Challenge_6.Clases3;
 using BootCamp_Challenge_6.Clases5;
 using BootCamp_Challenge_6.Clases6;
 
@@ -16,6 +17,7 @@ namespace BootCamp_Challenge_6
         {
             //Ejercicio1();
             //Ejercicio2();
+            //Ejercicio3();
             //Ejercicio5();
             //Ejercicio6();
             Console.ReadKey();
@@ -42,6 +44,14 @@ namespace BootCamp_Challenge_6
             auto.acelerar();
             auto.frenar();
             auto.apagar();
+        }
+
+        static void Ejercicio3()
+        {
+            Persona persona1 = new Persona("Felix", new DateTime(1985,10,12));
+            persona1.getNombre();
+            persona1.edad();
+            
         }
 
         static void Ejercicio5()

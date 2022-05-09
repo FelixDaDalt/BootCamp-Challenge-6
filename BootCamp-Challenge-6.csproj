@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Clases2\Vehiculo.cs" />
     <Compile Include="Clases2\VehiculoMetodos.cs" />
+    <Compile Include="Clases3\Persona.cs" />
+    <Compile Include="Clases3\PersonaMetodos.cs" />
     <Compile Include="Clases5\PilaGenerica.cs" />
     <Compile Include="Clases6\ColaGenerica.cs" />
     <Compile Include="Clases\Rectangulo.cs" />
