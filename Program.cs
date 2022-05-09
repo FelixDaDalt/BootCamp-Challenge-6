@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BootCamp_Challenge_6.Clases;
 using BootCamp_Challenge_6.Clases2;
 using BootCamp_Challenge_6.Clases5;
+using BootCamp_Challenge_6.Clases6;
 
 namespace BootCamp_Challenge_6
 {
@@ -16,6 +17,7 @@ namespace BootCamp_Challenge_6
             //Ejercicio1();
             //Ejercicio2();
             //Ejercicio5();
+            //Ejercicio6();
             Console.ReadKey();
 
         }
@@ -44,18 +46,26 @@ namespace BootCamp_Challenge_6
 
         static void Ejercicio5()
         {
+            Console.WriteLine("PILA GENERICA :::::::::::::::::");
             PilaGenerica<int> enteros = new PilaGenerica<int>();
-            enteros.Agregar(3);
-            enteros.Agregar(2);
-            enteros.Agregar(1);
+            for(int x=0; x<3;x++)
+            {
+                Console.Write("Numero: ");
+                int num = Convert.ToInt32(Console.ReadLine());
+                enteros.Agregar(num);
+            }
 
             PilaGenerica<string> cadena = new PilaGenerica<string>();
-            cadena.Agregar("Hola");
-            cadena.Agregar("Mundo");
-
-            Console.WriteLine("\nPila Enteros:");
+            for (int x = 0; x < 3; x++)
+            {
+                Console.Write("Cadena: ");
+                string texto = Console.ReadLine();
+                cadena.Agregar(texto);
+            }
+            Console.Clear();
+            Console.WriteLine("Pila Enteros:");
             enteros.Mostrar();
-            Console.WriteLine("\nPila Cadena:");
+            Console.WriteLine("Pila Cadena:");
             cadena.Mostrar();
             Console.Write($"\nDesapilo en Entero: {enteros.Desapilar()}");
             Console.WriteLine($"\nDesapilo en Cadena: {cadena.Desapilar()}");
@@ -64,7 +74,43 @@ namespace BootCamp_Challenge_6
             enteros.Mostrar();
             Console.WriteLine("\nResultado Cadena:");
             cadena.Mostrar();
+            Console.ReadKey();
+            Console.Clear();
+        }
+        
+        static void Ejercicio6()
+        {
+            Console.WriteLine("COLA GENERICA :::::::::::::::::");
+            ColaGenerica<int> enteros = new ColaGenerica<int>();
+            for (int x = 0; x < 3; x++)
+            {
+                Console.Write("Numero: ");
+                int num = Convert.ToInt32(Console.ReadLine());
+                enteros.Agregar(num);
+            }
 
+            ColaGenerica<string> cadena = new ColaGenerica<string>();
+            for (int x = 0; x < 3; x++)
+            {
+                Console.Write("Cadena: ");
+                string texto = Console.ReadLine();
+                cadena.Agregar(texto);
+            }
+
+            Console.Clear();
+            Console.WriteLine("Cola Enteros:");
+            enteros.Mostrar();
+            Console.WriteLine("Cola Cadena:");
+            cadena.Mostrar();
+            Console.Write($"\nDesencolo en Entero: {enteros.Desencolar()}");
+            Console.WriteLine($"\nDesencolo en Cadena: {cadena.Desencolar()}");
+
+            Console.WriteLine("\nResultado Entero:");
+            enteros.Mostrar();
+            Console.WriteLine("\nResultado Cadena:");
+            cadena.Mostrar();
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
