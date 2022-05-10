@@ -18,7 +18,8 @@ namespace BootCamp_Challenge_6.Clases7
 
         public void AgregarItem(T obj)
         {
-            listaItems.Add(obj);
+                listaItems.Add(obj);
+
         }
 
         public void BorrarItem(T obj)

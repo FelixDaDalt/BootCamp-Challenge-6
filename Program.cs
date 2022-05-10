@@ -25,6 +25,9 @@ namespace BootCamp_Challenge_6
             //Ejercicio7();
             //Ejercicio8();
             //Ejercicio9();
+            //Ejercicio10();
+            //Ejercicio11();
+            //Ejercicio12();
             Console.ReadKey();
 
         }
@@ -133,7 +136,7 @@ namespace BootCamp_Challenge_6
             ListaItems<int> numero = new ListaItems<int>();
 
             #region ENTEROS
-            for (int x=0; x < 5;x++)
+            for (int x = 0; x < 5; x++)
             {
                 Console.Write("Numero: ");
                 numero.AgregarItem(Convert.ToInt32(Console.ReadLine()));
@@ -144,10 +147,10 @@ namespace BootCamp_Challenge_6
                 numero.ObtenerItem(x);
             }
             Console.WriteLine($"Cantidad elementos: {numero.CantidadItems()}");
-            
+
             Console.Write("Borrar el: ");
             numero.BorrarItem(Convert.ToInt32(Console.ReadLine()));
-            
+
             Console.WriteLine("Mostrar");
             for (int x = 0; x < numero.CantidadItems(); x++)
             {
@@ -179,6 +182,7 @@ namespace BootCamp_Challenge_6
             }
             Console.WriteLine($"Cantidad elementos: {cadena.CantidadItems()}");
             #endregion
+            
 
         }
 
@@ -197,6 +201,28 @@ namespace BootCamp_Challenge_6
                 Console.WriteLine("Es Mayor");
             else
                 Console.WriteLine("Es Menor");
+        }
+
+        static void Ejercicio10()
+        {
+            List<int> enteros = new List<int>() { 1, 2, 3, 4, 5 };
+            List<string> cadena = new List<string>() { "Hola","Mundo","Estoy","Programando" };
+
+            enteros.imprimirLista();
+            cadena.imprimirLista();
+        }
+
+        static void Ejercicio11()
+        {
+            int numero = 10;
+            numero.imprimirHasta(20);
+        }
+
+        static void Ejercicio12()
+        {
+            double pesos = 120.53;
+            Console.WriteLine(pesos.centavos());
+            Console.WriteLine(pesos.entera());
         }
     }
 }

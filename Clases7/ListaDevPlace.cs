@@ -15,5 +15,6 @@ namespace BootCamp_Challenge_6.Clases7
         void ObtenerItem(int i);
 
         int CantidadItems();
+
     }
 }

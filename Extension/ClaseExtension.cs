@@ -24,5 +24,35 @@ namespace BootCamp_Challenge_6.Extension
             else
                 return false;
         }
+        public static void imprimirLista<T>(this List<T> l)
+        {
+            foreach(T value in l)
+            {
+                Console.WriteLine(value.ToString());
+            }
+        }
+        public static void imprimirHasta(this int y, int x)
+        {
+            if(y < x)
+            {
+                while (y <= x)
+                {
+                    Console.WriteLine(y);
+                    y++;
+                }
+            }
+            else
+            {
+                Console.WriteLine("El numero es mayor");
+            }
+        }
+        public static double centavos(this double cent)
+        {
+            return Math.Truncate(cent);
+        }
+        public static double entera(this double cent)
+        {
+            return cent-Math.Truncate(cent);
+        }
     }
 }
